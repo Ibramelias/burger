@@ -1,9 +1,4 @@
-body{
-    
-    width: 99%;
-    height: 900px;
-    background-color: #fc6
-}
+
 
 .container{
     text-align: center;
@@ -20,4 +15,8 @@ h1{
 
 .option{
     margin: 60px;
+}
+
+.logo{
+
 }
