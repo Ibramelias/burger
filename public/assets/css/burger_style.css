@@ -1,0 +1,23 @@
+body{
+    
+    width: 99%;
+    height: 900px;
+    background-color: #fc6
+}
+
+.container{
+    text-align: center;
+  
+}
+
+h1{
+    color: red;
+    margin-bottom: 20%;
+}
+.search{
+    margin-top: 70px;
+}
+
+.option{
+    margin: 60px;
+}
