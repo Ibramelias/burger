@@ -11,10 +11,9 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Eat My Burger</title>
     <style>
-        body{
-        background-color: #fc6;
-    }
- 
+        body {
+            background-color: #fc6;
+        }
     </style>
 </head>
 
@@ -33,7 +32,7 @@
             <form>
                 <!-- Input placeholder -->
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" name="burger_name" value="" id="burger_name">
                 </div>
                 <!-- Submit button -->
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -42,14 +41,16 @@
         <div class="option">
             <P>Eat or Delete burger.</P>
         </div>
+        <div class="row">
+            <div class="col-md-6" id="not_devoured"></div>
+            <div class="col-md-6" id="devoured"></div>
+        </div>
     </div>
 </body>
 
 <!-- Script links -->
-<script src="assets/js/burger.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+<script src="assets/js/burgers.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
