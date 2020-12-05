@@ -4,6 +4,7 @@ $(document).ready(function() {
     type: "GET"
   }).then(function(data) {
 
+
     let burgers = data.burgers;
     let len = burgers.length;
 
