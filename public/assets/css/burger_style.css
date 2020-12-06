@@ -22,10 +22,16 @@ h1{
     margin:auto;
    
 }
-#devoured ul {
-    list-style: none;
+ul li {
     text-align: left;
-}
-#devoured li {
     padding: 10px;
+    list-style: none;
+}
+.btn-primary {
+    margin-right: 10px;    
+}
+p{
+    font-size: 25px;
+    color: rgb(10, 19, 52);
+    font-family: 'Russo One', sans-serif;
 }

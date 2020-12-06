@@ -72,7 +72,7 @@ function printQuestionMarks(num) {
       queryString += " SET ";
       queryString += objToSql(objColVals);
       queryString += " WHERE ";
-      queryString += condition;
+      queryString += " " + condition;
   
       console.log(queryString);
       connection.query(queryString, function(err, result) {
@@ -83,12 +83,14 @@ function printQuestionMarks(num) {
         cb(result);
       });
     },
-    deleteOne: function(table, condition, cb) {
+
+
+    deleteOne: function (table, condition, cb) {
       var queryString = "DELETE FROM " + table;
       queryString += " WHERE ";
       queryString += condition;
   
-      connection.query(queryString, function(err, result) {
+      connection.query(queryString, function (err, result) {
         if (err) {
           throw err;
         }
