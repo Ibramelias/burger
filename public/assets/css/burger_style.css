@@ -22,3 +22,10 @@ h1{
     margin:auto;
    
 }
+#devoured ul {
+    list-style: none;
+    text-align: left;
+}
+#devoured li {
+    padding: 10px;
+}

@@ -8,20 +8,20 @@ $(function () {
     let burgers = data.burgers;
     let len = burgers.length;
 
-    let ul_elem_eat = $("#eat-burger")
-    let ul_elem_del = $("#delete-burger")
+    let ul_elem_eat = $("#devoured")
+    let ul_elem_del = $("#not_devoured")
 
-    for (var i = 0; i < length; i++) {
+    for (var i = 0; i < len; i++) {
       if (burgers[i].devoured === 0) {
         ul_elem_eat.append("<li>" +
           "<button data-id='" +
-          burgers[i].id + "' data-devoured='" + burgers[i].devoured + "' class='btn btn-danger eat'>Eat!</button>"
+          burgers[i].id + "' data-devoured='" + burgers[i].devoured + "' class='submit btn-primary eat'>Eat!</button>"
           + burgers[i].burger_name + "</li>")
       }
       else {
         ul_elem_del.append("<li>" +
           "<button data-id='" +
-          burgers[i].id + "' data-devoured='" + burgers[i].devoured + "' class='btn btn-danger delete'>Delete!</button>"
+          burgers[i].id + "' data-devoured='" + burgers[i].devoured + "' class='submit btn-primary delete'>Delete!</button>"
           + burgers[i].burger_name + "</li>")
       }
     }
@@ -61,17 +61,11 @@ $(document).on("click",".delete", function (event) {
 });
 
 // POST New Burger Name.
-$(document).on("click",".submit", function (event) {
+$("#addBurger").on("submit", function (event) {
   // Make sure to preventDefault on a submit event.
   event.preventDefault();
 
-  var burgerName = $("#burger_name").val()
-  console.log(burgerName);
-
-  var newBurger = {
-    name: burgerName,
-    devoured: false,
-  }
+  let newBurger = { burger_name: $("#addBurger [name=burger_name]").val().trim()};
 
 
   // Send the POST request.
@@ -86,10 +80,6 @@ $(document).on("click",".submit", function (event) {
     location.reload();
   });
 });
-
-
-
-
 
 
 
