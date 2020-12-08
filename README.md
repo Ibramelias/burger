@@ -1,5 +1,5 @@
 ## Burger
-create a burger logger with MySQL, Node, Express and a homemade ORM (yum!).
+Create a burger logger with MySQL, Node, Express and a homemade ORM (yum!). [Check Me Here!](https://burger-yumy-yumy.herokuapp.com/)
 
 ## Description.
 * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
